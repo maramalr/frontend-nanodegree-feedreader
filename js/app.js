@@ -123,7 +123,6 @@ $(function() {
         loadFeed(item.data('id'));
         return false;
     });
-
     /* When the menu icon is clicked on, we need to toggle a class
      * on the body to perform the hiding/showing of our menu.
      */
