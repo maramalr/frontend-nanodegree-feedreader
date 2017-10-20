@@ -30,7 +30,7 @@ $(function() {
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
-        it('URL defined and is not empty', function() {
+        it('Has a URL and is not empty', function() {
             allFeeds.forEach(function(feed) {
                 expect(feed.url).toBeDefined();
                 expect(feed.url.length).not.toBe(0);
@@ -41,7 +41,7 @@ $(function() {
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
-        it('Name defined and is not empty', function() {
+        it('has a Name and is not empty', function() {
             allFeeds.forEach(function(feed) {
                 expect(feed.name).toBeDefined();
                 expect(feed.name.length).not.toBe(0);
@@ -59,7 +59,7 @@ $(function() {
      */
 
     describe('menu', function() {
-        it('hidden menu by default', function() {
+        it('hidden menu element by default', function() {
             expect($('.menu-hidden').is(':visible')).toBe(true);
         });
 
